@@ -1,0 +1,17 @@
+server:
+  port: 8082
+
+dubbo:
+  application:
+    name: company-consumer
+    qos-enable: false
+  registry:
+    address: zookeeper://localhost:2181
+    timeout: 10000
+  consumer:
+    timeout: 5000
+    check: false
+
+logging:
+  level:
+    com.company.consumer: debug

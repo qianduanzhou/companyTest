@@ -1,0 +1,46 @@
+### List all users
+GET http://localhost:8080/user/list
+Accept: application/json
+
+###
+
+### Page users
+GET http://localhost:8080/user/page?pageNum=1&pageSize=2&keyword=to
+Accept: application/json
+
+###
+
+### Get user by id
+GET http://localhost:8080/user/1
+Accept: application/json
+
+###
+
+### Create user
+POST http://localhost:8080/user
+Content-Type: application/json
+
+{
+  "username": "alice",
+  "email": "alice@example.com",
+  "phone": "13800000001"
+}
+
+###
+
+### Update user
+PUT http://localhost:8080/user
+Content-Type: application/json
+
+{
+  "id": 1,
+  "username": "alice-updated",
+  "email": "alice.updated@example.com",
+  "phone": "13800000009"
+}
+
+###
+
+### Delete user
+DELETE http://localhost:8080/user/1
+Accept: application/json
