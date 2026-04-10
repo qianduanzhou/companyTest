@@ -71,7 +71,7 @@
 成功标志：
 
 - 应用正常启动
-- 访问 `http://localhost:8080/user/list` 能得到 JSON 响应
+- 访问 `http://localhost:8082/user/list` 能得到 JSON 响应
 
 ## 5. 如何验证是否真的跑通
 

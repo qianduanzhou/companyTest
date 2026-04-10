@@ -1,23 +1,23 @@
 ### List all users
-GET http://localhost:8080/user/list
+GET http://localhost:8082/user/list
 Accept: application/json
 
 ###
 
 ### Page users
-GET http://localhost:8080/user/page?pageNum=1&pageSize=2&keyword=to
+GET http://localhost:8082/user/page?pageNum=1&pageSize=2&keyword=to
 Accept: application/json
 
 ###
 
 ### Get user by id
-GET http://localhost:8080/user/1
+GET http://localhost:8082/user/1
 Accept: application/json
 
 ###
 
 ### Create user
-POST http://localhost:8080/user
+POST http://localhost:8082/user
 Content-Type: application/json
 
 {
@@ -29,7 +29,7 @@ Content-Type: application/json
 ###
 
 ### Update user
-PUT http://localhost:8080/user
+PUT http://localhost:8082/user
 Content-Type: application/json
 
 {
@@ -42,5 +42,5 @@ Content-Type: application/json
 ###
 
 ### Delete user
-DELETE http://localhost:8080/user/1
+DELETE http://localhost:8082/user/1
 Accept: application/json
